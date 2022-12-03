@@ -1,12 +1,14 @@
 package kr.ac.sejong.kmooc.data_engineering.arraylist;
 
-import java.util.ArrayList;
+import java.util.List;
+
+import kr.ac.sejong.kmooc.data_engineering.arraylist.impl.MyArrayList;
 
 public class ArrayListExample4 {
 
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
-		ArrayList<Integer> intList = new ArrayList<Integer>();
+		List<Integer> intList = new MyArrayList<Integer>();
 		System.out.println(intList.isEmpty());
 		System.out.println(intList.size());
 
@@ -21,3 +23,12 @@ public class ArrayListExample4 {
 	}
 
 }
+//true
+//0
+//true
+//false
+//1
+//true
+//true
+//false
+//3

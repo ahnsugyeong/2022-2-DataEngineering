@@ -1,12 +1,14 @@
 package kr.ac.sejong.kmooc.data_engineering.arraylist;
 
-import java.util.ArrayList;
+import java.util.List;
+
+import kr.ac.sejong.kmooc.data_engineering.arraylist.impl.MyArrayList;
 
 public class ArrayListExample11 {
 
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
-		ArrayList<Integer> l = new ArrayList<Integer>();
+		List<Integer> l = new MyArrayList<Integer>();
 		l.add(3);
 		l.add(5);
 		l.add(7);
@@ -18,6 +20,15 @@ public class ArrayListExample11 {
 		System.out.println(l);
 		System.out.println(l.remove(1));
 		System.out.println(l);
+		System.out.println(l.remove(100));
 	}
 
 }
+
+//[3, 5, 7, 9]
+//3
+//[5, 7, 9]
+//[5, 7, 9, 11]
+//7
+//[5, 9, 11]
+//IndexOutOfBoundsException		

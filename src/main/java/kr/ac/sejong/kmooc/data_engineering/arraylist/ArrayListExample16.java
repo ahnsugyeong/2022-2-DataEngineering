@@ -1,14 +1,14 @@
 package kr.ac.sejong.kmooc.data_engineering.arraylist;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.ListIterator;
+import java.util.List;
+
+import kr.ac.sejong.kmooc.data_engineering.arraylist.impl.MyArrayList;
 
 public class ArrayListExample16 {
 
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
-		ArrayList<Integer> list = new ArrayList<Integer>();
+		List<Integer> list = new MyArrayList<Integer>();
 		list.add(1);
 		list.add(2);
 		list.add(3);
