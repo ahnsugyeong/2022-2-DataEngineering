@@ -3,6 +3,7 @@ package kr.ac.sejong.kmooc.data_engineering.linkedlist;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+import kr.ac.sejong.kmooc.data_engineering.linkedlist.impl.MyLinkedList;
 import kr.ac.sejong.kmooc.data_engineering.motivation.Email;
 
 public class LinkedListExample2 {
@@ -19,6 +20,9 @@ public class LinkedListExample2 {
 		System.out.println(intList);
 		System.out.println(stringList);
 		System.out.println(emailList);
+
+		MyLinkedList<Integer> intList2 = new MyLinkedList<Integer>(arrayList);
+		System.out.println(intList2);
 	}
 
 }
