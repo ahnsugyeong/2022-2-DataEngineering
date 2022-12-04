@@ -39,5 +39,12 @@ public class Email {
 	public void setTo(int to) {
 		this.to = to;
 	}
+	
+	
+	
+	@Override
+	public int hashCode() {
+		return from + to;
+	}
 
 }
