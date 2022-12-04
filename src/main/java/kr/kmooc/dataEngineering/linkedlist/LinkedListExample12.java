@@ -4,15 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-import kr.kmooc.dataEngineering.homework2_3.MyLinkedList;
 import kr.kmooc.dataEngineering.motivation.Email;
 
 public class LinkedListExample12 {
 
 	public static List<Email> getLinkedList() throws IOException {
-		List<Email> data = new MyLinkedList<Email>();
+		List<Email> data = new LinkedList<Email>();
 		BufferedReader br = new BufferedReader(new FileReader("/Users/ahnsugyeong/desktop/2022-2/데이터엔지니어링/email.txt"));
 		int index = 0;
 		while (true) {
